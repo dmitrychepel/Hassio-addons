@@ -1,4 +1,4 @@
-# Hass.io Add-on: Dahua VTO to MQTT Broker
+# Fixed Hass.io Add-on: Dahua VTO to MQTT Broker
 
 Sends Dahua Intercom events to the MQTT Broker
 
