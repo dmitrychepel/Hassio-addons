@@ -9,6 +9,9 @@ export MQTT_BROKER_USERNAME=$(bashio::config 'mqtt.username')
 export MQTT_BROKER_PASSWORD=$(bashio::config 'mqtt.password')
 export MQTT_BROKER_TOPIC_PREFIX=$(bashio::config 'mqtt.topic_prefix')
 
+bashio::log.info "@@@@@@@@@@@@@@@@"
+which curl
+bashio::log.info "@@@@@@@@@@@@@@@@"
 bashio::log.info "FFS"
 bashio::log.info "Staring Dahua to MQTT"
 bashio::log.debug "Connecting to Intercom ${DAHUA_VTO_HOST} with username ${DAHUA_VTO_USERNAME}"
