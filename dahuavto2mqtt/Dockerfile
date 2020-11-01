@@ -7,7 +7,7 @@ ENV LANG C.UTF-8
 
 ARG DAHUA_BRANCH="master"
 
-RUN apk add --no-cache --update argon2-libs php php-json && \
+RUN apk add --no-cache --update argon2-libs php php-json php-curl && \
     apk add --no-cache --virtual .build-dependencies git curl && \
     git clone https://github.com/elad-bar/DahuaVTO2MQTT.git --branch ${DAHUA_BRANCH} --depth 1 /app && \
     chmod +x /app/DahuaVTO.php && \
