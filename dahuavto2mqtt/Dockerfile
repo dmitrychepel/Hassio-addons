@@ -11,6 +11,8 @@ RUN apk add --no-cache --update argon2-libs php php-json && \
     git clone https://github.com/elad-bar/DahuaVTO2MQTT.git --branch ${DAHUA_BRANCH} --depth 1 /app && \
     chmod +x /app/DahuaVTO.php && \
     apk del .build-dependencies
+    
+RUN which curl
 
 WORKDIR /app
 
